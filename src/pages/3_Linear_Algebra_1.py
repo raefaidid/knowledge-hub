@@ -33,27 +33,27 @@ def chapter_3(subchapter:str) ->str:
     st.header(f"1. Evaluating Determinants")
     # st.subheader(f"There four methods for evaluation")
     with st.expander("Formula"):
-        video_file = open('/Users/Raef/Desktop/python-projects/raefs-knowledge-hub/src/media/LESSON 3.1.1_EVALUATE DETERMINANT USING FORMULA.mp4', 'rb')
+        video_file = open('./src/media/LESSON 3.1.1_EVALUATE DETERMINANT USING FORMULA.mp4', 'rb')
         video_bytes = video_file.read()
         st.video(video_bytes)
 
     with st.expander("Cofactor Expansion"):
-        video_file = open('/Users/Raef/Desktop/python-projects/raefs-knowledge-hub/src/media/LESSON 3.1.2_EVALUATE DETERMINANT USING COFACTOR EXPANSION.mp4', 'rb')
+        video_file = open('./src/media/LESSON 3.1.2_EVALUATE DETERMINANT USING COFACTOR EXPANSION.mp4', 'rb')
         video_bytes = video_file.read()
         st.video(video_bytes)
     
     with st.expander("Determinants of certain matrices"):
-        video_file = open('/Users/Raef/Desktop/python-projects/raefs-knowledge-hub/src/media/LESSON 3.1.3_DETERMINANTS OF CERTAIN SPECIAL MATRIX.mp4', 'rb')
+        video_file = open('./src/media/LESSON 3.1.3_DETERMINANTS OF CERTAIN SPECIAL MATRIX.mp4', 'rb')
         video_bytes = video_file.read()
         st.video(video_bytes)
 
     with st.expander("Elementary Operations"):
-        video_file = open('/Users/Raef/Desktop/python-projects/raefs-knowledge-hub/src/media/LESSON 3.1.4_EVALUATE DETERMINANT USING ELEMENTARY OPERATIONS.mp4', 'rb')
+        video_file = open('./src/media/LESSON 3.1.4_EVALUATE DETERMINANT USING ELEMENTARY OPERATIONS.mp4', 'rb')
         video_bytes = video_file.read()
         st.video(video_bytes)
 
     with st.expander("Properties of determinants"):
-        video_file = open('/Users/Raef/Desktop/python-projects/raefs-knowledge-hub/src/media/MAT423_Lesson 3.2_Properties of Determinant.mp4', 'rb')
+        video_file = open('./src/media/MAT423_Lesson 3.2_Properties of Determinant.mp4', 'rb')
         video_bytes = video_file.read()
         st.video(video_bytes)
 
@@ -62,12 +62,12 @@ def chapter_3(subchapter:str) ->str:
     st.header(f"2. Application of determinants")
 
     with st.expander("Adjoint Method"):
-        video_file = open('/Users/Raef/Desktop/python-projects/raefs-knowledge-hub/src/media/MAT423_LESSON 3.3_ADJOINT METHOD.mp4', 'rb')
+        video_file = open('./src/media/MAT423_LESSON 3.3_ADJOINT METHOD.mp4', 'rb')
         video_bytes = video_file.read()
         st.video(video_bytes)
         
     with st.expander("Cramer's Rule"):
-        video_file = open("/Users/Raef/Desktop/python-projects/raefs-knowledge-hub/src/media/MAT423_LESSON 3.4_CRAMER'S RULE.mp4", 'rb')
+        video_file = open("./src/media/MAT423_LESSON 3.4_CRAMER'S RULE.mp4", 'rb')
         video_bytes = video_file.read()
         st.video(video_bytes)
 
