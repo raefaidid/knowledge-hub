@@ -71,7 +71,57 @@ def chapter_3(subchapter:str) ->str:
         video_bytes = video_file.read()
         st.video(video_bytes)
 
+def chapter_4(subchapter:str) ->str:
 
+    st.title(f"{CHAPTER_4}")
+    with st.popover("Learning Objectives:"):
+        st.markdown("""
+                    - evaluate determinants by using formula, cofactor expansion and elementary operation
+                    - apply properties of determinant and equivalence conditions for a square matrix
+                    - find the inverse of a matrix by using the adjoint formula
+                    - use Cramer’s Rule to solve systems of linear equations
+                    - form the cofactor matrix and find the adjoint of a matrix
+                    """)
+    st.header(f"1. Understanding Vectors")
+    # st.subheader(f"There four methods for evaluation")
+    with st.expander("Vector Operations"):
+        video_file = open('./src/media/MAT423_LESSON 4.1.1_VECTOR OPERATIONS.mp4', 'rb')
+        video_bytes = video_file.read()
+        st.video(video_bytes)
+
+    with st.expander("Linear Combinations"):
+        video_file = open('./src/media/MAT423_LESSON 4.4a_LINEAR COMBINATION.mp4', 'rb')
+        video_bytes = video_file.read()
+        st.video(video_bytes)
+    
+    with st.expander("Basis and dimensions"):
+        video_file = open('./src/media/MAT423_LESSON 4.5_BASIS & DIMENSION.mp4', 'rb')
+        video_bytes = video_file.read()
+        st.video(video_bytes)
+
+    with st.expander("Row space, column space, rank"):
+        video_file = open('./src/media/MAT423_LESSON 4.6A_ROW SPACE, COLUMN SPACE & RANK.mp4', 'rb')
+        video_bytes = video_file.read()
+        st.video(video_bytes)
+
+    with st.expander("Null space and nullity"):
+        video_file = open('./src/media/MAT423_LESSON 4.6B_NULLSPACE & NULLITY.mp4', 'rb')
+        video_bytes = video_file.read()
+        st.video(video_bytes)
+
+    st.divider()
+
+    st.header(f"2. Application of determinants")
+
+    with st.expander("Adjoint Method"):
+        video_file = open('./src/media/MAT423_LESSON 3.3_ADJOINT METHOD.mp4', 'rb')
+        video_bytes = video_file.read()
+        st.video(video_bytes)
+        
+    with st.expander("Cramer's Rule"):
+        video_file = open("./src/media/MAT423_LESSON 3.4_CRAMER'S RULE.mp4", 'rb')
+        video_bytes = video_file.read()
+        st.video(video_bytes)
 
 
 def main():
@@ -91,6 +141,8 @@ def main():
 
     if chapter_selection == CHAPTER_3:
         chapter_3(subchapter_selection)
+    if chapter_selection == CHAPTER_4:
+        chapter_4(subchapter_selection)
 
 
 if __name__ == "__main__":
