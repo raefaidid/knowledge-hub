@@ -109,20 +109,6 @@ def chapter_4(subchapter:str) ->str:
         video_bytes = video_file.read()
         st.video(video_bytes)
 
-    st.divider()
-
-    st.header(f"2. Application of determinants")
-
-    with st.expander("Adjoint Method"):
-        video_file = open('./src/media/MAT423_LESSON 3.3_ADJOINT METHOD.mp4', 'rb')
-        video_bytes = video_file.read()
-        st.video(video_bytes)
-        
-    with st.expander("Cramer's Rule"):
-        video_file = open("./src/media/MAT423_LESSON 3.4_CRAMER'S RULE.mp4", 'rb')
-        video_bytes = video_file.read()
-        st.video(video_bytes)
-
 
 def main():
 
